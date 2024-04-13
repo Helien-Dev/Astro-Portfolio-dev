@@ -7,7 +7,7 @@ import QuickProjects from '../config/quickProjects.json'
 
 	<div class="pb-10">
 		<h1 class="font-bold text-center  text-white text-5xl">Alvaro Avila <span>Dev</span></h1>
-		<p class="text-center mt-5 mb-8 text-xl"> Resumen de los proyectos mas grandes que he hecho en los ultimos meses: </p>
+		<p class="text-center mt-5 mb-8 text-xl"> Desarrollador full-stack comprometido en potenciar tus emprendimientos digitales y ofrecer una experiencia excepcional al cliente. </p>
 	</div>
 
 	<section>
@@ -82,6 +82,34 @@ import QuickProjects from '../config/quickProjects.json'
 
 	span {
 		color: rgb(79, 70, 229);
+	}
+
+	@media screen {max-width: 1000px;
+		.main-Div {
+    		grid-template-columns: repeat(4, 1fr);
+    		grid-template-areas:
+				"hero   hero   hero   hero"
+				"hero   hero   hero   hero"
+				"aside2 aside2 aside2 aside3"
+				"aside4 aside4 aside5 aside5";
+		}
+	}
+
+	@media screen {max-width: 650px;
+		.main-Div {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-areas:
+				"hero   hero   hero"
+     			"hero   hero   hero"
+      			"aside2 aside2 aside2"
+      			"aside3 aside3 aside3"
+      			"aside4 aside4 aside4"
+      			"aside5 aside5 aside5";
+		}
+		.Div-images {
+			display: flex;
+			place-content: right;
+		}
 	}
 
 </style>
