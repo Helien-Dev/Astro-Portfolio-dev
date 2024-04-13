@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import QuickProjects from '../config/quickProjects.json'
+import Button from '../components/Button.astro';
 ---
 
 <Layout pagTitle='Alvaro Avila dev' pagDescription='Home alvaro'>
 
 	<div class="pb-10">
 		<h1 class="font-bold text-center  text-white text-5xl">Alvaro Avila <span>Dev</span></h1>
-		<p class="text-center mt-5 mb-8 text-xl"> Desarrollador full-stack comprometido en potenciar tus emprendimientos digitales y ofrecer una experiencia excepcional al cliente. </p>
+		<p class="text-center mt-5 mb-8 text-xl"> Desarrollador full-stack comprometido en potenciar y mejorar tus emprendimientos digitales y ofrecer una experiencia excepcional al cliente. </p>
 	</div>
 
 	<section>
@@ -15,11 +16,12 @@ import QuickProjects from '../config/quickProjects.json'
 			{
 				QuickProjects.map(projects => (
 					<div class="item">
-						<h1 class="text-center font-bold text-2xl mt-5 pb-2 text-indigo-600">{projects.title}</h1>
+						<h1 class="text-center font-bold text-2xl mt-5 pb-2 px-2 text-indigo-600">{projects.title}</h1>
 						<p class="text-center m-5 text-xl">{projects.description}</p>
-						<div class="Div-images ">
-							<img class="mt-5 mb-4 h-auto w-auto" src={projects.image} alt="">
+						<div class="Div-images h-auto w-auto">
+							<img class="mt-5" src={projects.image} alt="">
 						</div>
+						<Button dedicatedPage={projects.dedicatedPage}>{projects.title}</Button>
 					</div>
 				))
 			}
@@ -95,7 +97,7 @@ import QuickProjects from '../config/quickProjects.json'
 		}
 	}
 
-	@media screen {max-width: 650px;
+	@media screen {max-width: 750px;
 		.main-Div {
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-areas:
@@ -107,8 +109,8 @@ import QuickProjects from '../config/quickProjects.json'
       			"aside5 aside5 aside5";
 		}
 		.Div-images {
-			display: flex;
-			place-content: right;
+			display: grid;
+			place-items: left;
 		}
 	}
 
