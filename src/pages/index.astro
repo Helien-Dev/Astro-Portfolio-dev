@@ -9,8 +9,9 @@ import About from './about.astro';
 <Layout pagTitle='Alvaro Avila Dev' pagDescription='Home alvaro'>
 
 	<div class="pb-10">
-		<h1 class="font-bold text-center text-white text-5xl px-2"> 👋🏻 Hola! soy, Alvaro Avila <span class="text-indigo-600">Dev</span><div><Bagde>Descargar CV</Bagde></div></h1>
-		<p class=" m-auto w-full max-w-[1300px] text-center mt-5 mb-8 text-xl px-2"> Desarrollador full-stack, comprometido en potenciar, mejorar y ayudar a tus emprendimientos digitales ofreciendo una calidad de experiencia excepcional al cliente. </p>
+		<h1 class="font-bold text-center text-white text-5xl px-1"> 👋🏻 Hola! soy, Alvaro Avila <span class="text-indigo-600">Dev</span><div><Bagde>Descargar CV</Bagde></div></h1>
+        <a id="about-me"></a>
+		<p class=" m-auto w-full max-w-[1300px] text-center mt-5 mb-8 text-xl px-10"> Desarrollador full-stack, comprometido en <span class="green-bold">potenciar, mejorar y ayudar</span> a tus emprendimientos digitales ofreciendo una calidad de experiencia excepcional al cliente. </p>
 	</div>
 	
 	<About>
@@ -21,7 +22,7 @@ import About from './about.astro';
 			{
 				QuickProjects.map(projects => (
 					<div class="item">
-						<h1 class="text-center font-bold text-2xl mt-5 pb-2 px-2 text-indigo-600">{projects.title}</h1>
+						<h1 class="text-center font-bold text-2xl mt-5 pb-2 px-10 text-indigo-600">{projects.title}</h1>
 						<p class="text-center m-5 text-xl">{projects.description}</p>
 						<div class="div-images h-auto w-auto">
 							<img src={projects.image} alt="">
@@ -112,6 +113,11 @@ import About from './about.astro';
             "aside4 aside4 aside4"
             "aside5 aside5 aside5";
     }
+}
+
+.green-bold {
+    color: #3cbc41;
+    font-weight: bold;
 }
 
 
