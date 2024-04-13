@@ -4,8 +4,11 @@ import QuickProjects from '../config/quickProjects.json'
 ---
 
 <Layout pagTitle='Alvaro Avila dev' pagDescription='Home alvaro'>
-	<h1 class="font-bold text-center pt-10 text-white text-5xl">Alvaro Avila <span>Dev</span></h1>
-	<p class="text-center mt-5 mb-8 text-xl"> Resumen de los proyectos mas grandes que he hecho en los ultimos meses: </p>
+
+	<div class="pb-10">
+		<h1 class="font-bold text-center  text-white text-5xl">Alvaro Avila <span>Dev</span></h1>
+		<p class="text-center mt-5 mb-8 text-xl"> Resumen de los proyectos mas grandes que he hecho en los ultimos meses: </p>
+	</div>
 
 	<section>
 		<div class="main-Div">
@@ -13,9 +16,9 @@ import QuickProjects from '../config/quickProjects.json'
 				QuickProjects.map(projects => (
 					<div class="item">
 						<h1 class="text-center font-bold text-2xl mt-5 pb-2 text-indigo-600">{projects.title}</h1>
-						<p class="text-center mt-5 text-xm">{projects.description}</p>
-						<div class="Div-images">
-							<img class="mt-5 mb-4" src={projects.image} alt="">
+						<p class="text-center m-5 text-xl">{projects.description}</p>
+						<div class="Div-images ">
+							<img class="mt-5 mb-4 h-auto w-auto" src={projects.image} alt="">
 						</div>
 					</div>
 				))

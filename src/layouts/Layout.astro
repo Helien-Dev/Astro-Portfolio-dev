@@ -17,16 +17,17 @@ const { pagTitle, pagDescription } = Astro.props
 </head>
 <body class="h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
     <header>
-        <nav class="navbar">
+        <nav class="navbar ">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About me</a></li>
                 <li><a href="/">Services</a></li>
                 <li><a href="/">Experience & projects</a></li>
+                <li><a href="/">Contact me</a></li>
             </ul>
         </nav>
     </header>
-	<main>
+	<main class="main-distance">
 		<slot>
 	</main>
 </body>
@@ -43,11 +44,17 @@ const { pagTitle, pagDescription } = Astro.props
 		background-color: #202020;
 		padding: 18px ;
 		border-radius: 10px;
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
 	}
 
 	.navbar {
 		font-weight: bold;
 		text-align: center;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
 	}
 
 	.navbar ul {
@@ -68,6 +75,12 @@ const { pagTitle, pagDescription } = Astro.props
 		color: white;
 		padding: 10px;
 		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.main-distance {
+		padding-top: 122px;
+		padding-bottom: 22px;
 	}
 
 </style>
