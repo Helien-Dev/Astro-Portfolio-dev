@@ -1,0 +1,80 @@
+<header>
+    <nav class="navbar ">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Experience & projects</a></li>
+            <li><a href="/">Contact me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+header {
+    background-color: #202020;
+    padding: 18px;
+    border-radius: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar ul {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #fcfcfc;
+    margin: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(79, 70, 229);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 12px;
+        position: fixed;
+    }
+    .navbar a {
+        margin-top: 10px;
+    }
+    .navbar a:hover {
+        margin-top: 10px;
+    }
+}
+
+@media screen and { max-width: 750px;
+    header {
+        padding: 10px;
+        position: fixed;
+    }
+    .navbar a {
+        margin-top: 10px;
+    }
+    .navbar a:hover {
+        margin-top: 10px;
+    }
+}
+
+</style>

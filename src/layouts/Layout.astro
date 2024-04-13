@@ -1,4 +1,5 @@
 ---
+import Header from '../components/Header.astro'
 interface Props {
     pagTitle: string
     pagDescription: string
@@ -16,17 +17,8 @@ const { pagTitle, pagDescription } = Astro.props
     <title>{pagTitle}</title>
 </head>
 <body class="h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
-    <header>
-        <nav class="navbar ">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About me</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Experience & projects</a></li>
-                <li><a href="/">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
+    <Header>
+	</Header>
 	<main class="main-distance">
 		<slot>
 	</main>
@@ -34,78 +26,20 @@ const { pagTitle, pagDescription } = Astro.props
 </html>
 
 <style is:global>
+:root {
+	color-scheme: light dark;
+}
 
 body {
     font-family: 'Onest Variable', sans-serif;
     background-color: #121212;
     color: rgb(255, 255, 255);
-}
-
-header {
-    background-color: #202020;
-    padding: 18px;
-    border-radius: 10px;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-}
-
-.navbar {
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.navbar ul {
-    display: inline-block;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar a {
-    color: #fcfcfc;
-    margin: 15px;
-}
-
-.navbar a:hover {
-    background-color: rgb(79, 70, 229);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+	min-height: 100vh;
 }
 
 .main-distance {
     padding-top: 122px;
     padding-bottom: 22px;
-}
-
-@media screen and (max-width: 1000px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "hero   hero   hero   hero"
-            "hero   hero   hero   hero"
-            "aside2 aside2 aside2 aside3"
-            "aside4 aside4 aside5 aside5";
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "hero   hero   hero"
-            "hero   hero   hero"
-            "aside2 aside2 aside2"
-            "aside3 aside3 aside3"
-            "aside4 aside4 aside4"
-            "aside5 aside5 aside5";
-    }
 }
 
 </style>
