@@ -1,0 +1,74 @@
+---
+interface Props {
+    pagTitle: string
+    pagDescription: string
+}
+
+const { pagTitle, pagDescription } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={pagDescription}>
+    <title>{pagTitle}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About me</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Experience & projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <slot>
+    </main>
+</body>
+</html>
+
+<style is:global>
+	body {
+		font-family: 'Onest Variable', sans-serif;
+		background-color: #121212;
+		color: white;
+	}
+
+	header {
+		background-color: #202020;
+		padding: 18px 0;
+		border-radius: 10px;
+	}
+
+	.navbar {
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.navbar ul {
+		display: inline-block;
+	}
+
+	.navbar li {
+		display: inline;
+		margin: 15px 15px;
+	}
+
+	.navbar a {
+		color: #fff;
+	}
+
+	.navbar a:hover {
+		background-color: rgb(79, 70, 229);
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+
+</style>

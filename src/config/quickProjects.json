@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Data storage Mobile - Encrypted App",
+        "description": "App Mobil con almacenamiento en la nube accesible en cualquier momento",
+        "image": "/images/undraw_mobile_profile_7hvy.svg"
+    },
+    {
+        "title": "Social Worker Media",
+        "description": "Una red social dedicada para equipos y trabajadores.",
+        "image": "/images/teamwork.svg"
+    },
+    {
+        "title": "Inteligencia Artificial para científicos ",
+        "description": "Api que consume datos de relevancia para la creación de medicamentos",
+        "image": "/images/undraw_scientist_ft0o.svg"
+    },
+    {
+        "title": "App meteorológica",
+        "description": "App meteorológica mundial con previsiones de hasta 12 horas",
+        "image": "/images/undraw_walking_in_rain_vo9p.svg"
+    },
+    {
+        "title": "Amo mucho a mi novia",
+        "description": "Mi novia esta bien bella, como me encanta ella diosmio",
+        "image": "/images/undraw_cat_epte.svg"
+    }
+]
