@@ -15,7 +15,7 @@ const { pagTitle, pagDescription } = Astro.props
     <meta name="description" content={pagDescription}>
     <title>{pagTitle}</title>
 </head>
-<body>
+<body class="h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
     <header>
         <nav class="navbar">
             <ul>
@@ -26,9 +26,9 @@ const { pagTitle, pagDescription } = Astro.props
             </ul>
         </nav>
     </header>
-    <main>
-        <slot>
-    </main>
+	<main>
+		<slot>
+	</main>
 </body>
 </html>
 
@@ -69,6 +69,5 @@ const { pagTitle, pagDescription } = Astro.props
 		padding: 10px;
 		border-radius: 5px;
 	}
-
 
 </style>
