@@ -3,15 +3,19 @@ import Layout from '../layouts/Layout.astro';
 import QuickProjects from '../config/quickProjects.json'
 import Button from '../components/Button.astro';
 import Bagde from '../components/CvButton.astro';
+import About from './about.astro';
 ---
 
 <Layout pagTitle='Alvaro Avila Dev' pagDescription='Home alvaro'>
 
 	<div class="pb-10">
-		<h1 class="font-bold text-center text-white text-5xl">Alvaro Avila <span class="text-indigo-600">Dev</span> <div> <Bagde>Descargar CV</Bagde> </div> </h1>
-		<p class="text-center mt-5 mb-8 text-xl"> Desarrollador full-stack comprometido en potenciar y mejorar tus emprendimientos digitales y ofrecer una experiencia excepcional al cliente. </p>
+		<h1 class="font-bold text-center text-white text-5xl px-2"> 👋🏻 Hola! soy, Alvaro Avila <span class="text-indigo-600">Dev</span><div><Bagde>Descargar CV</Bagde></div></h1>
+		<p class=" m-auto w-full max-w-[1300px] text-center mt-5 mb-8 text-xl px-2"> Desarrollador full-stack, comprometido en potenciar, mejorar y ayudar a tus emprendimientos digitales ofreciendo una calidad de experiencia excepcional al cliente. </p>
 	</div>
-
+	
+	<About>
+	</About>
+	
 	<section>
 		<div class="grid">
 			{
