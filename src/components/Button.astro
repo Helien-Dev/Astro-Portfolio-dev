@@ -5,18 +5,23 @@ interface Props {
 ---
 
 <div class=" flex justify-center items-center mt-10 mb-10 p-5 font-bold">
-    <button>
-        <slot> 
-    </button>
+    <a href="">
+        <slot>
+    </a>
 </div>
 
 <style>
 
-    button {
-		background-color: rgb(79, 70, 229);
+    a {
 		color: white;
+        border: 1px solid white;
 		padding: 10px;
 		border-radius: 5px;
+    }
+    a:hover {
+        transition-duration: 0.5s;
+		background-color: rgb(79, 70, 229);
+        border: 1px solid rgb(79, 70, 229);
     }
 
 </style>
