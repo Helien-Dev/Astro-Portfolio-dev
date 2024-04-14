@@ -4,6 +4,7 @@ import QuickProjects from '../config/quickProjects.json'
 import Button from '../components/Button.astro';
 import Bagde from '../components/CvButton.astro';
 import About from './about.astro';
+import Services from '../pages/services.astro';
 ---
 
 <Layout pagTitle='Alvaro Avila Dev' pagDescription='Home alvaro'>
@@ -18,12 +19,15 @@ import About from './about.astro';
 	</About>
 
 	<section>
+        <div class="pb-10">
+            <h1 class="font-bold text-center text-white text-5xl px-1">Experiencia & <span class="text-indigo-600">Proyectos:</span> </h1>
+        </div>
 		<div class="grid">
 			{
 				QuickProjects.map(projects => (
 					<div class="item">
 						<h1 class="text-center font-bold text-2xl mt-5 pb-2 px-10 text-indigo-600">{projects.title}</h1>
-						<p class="text-center m-5 text-xl">{projects.description}</p>
+						<p class="text-center m-5 text-xl ">{projects.description}</p>
 						<div class="div-images h-auto w-auto">
 							<img src={projects.image} alt="">
 						</div>
