@@ -1,16 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro";
+
 ---
 
 <section class="pb-8">
     <h1 class="font-bold text-center text-white text-5xl px-10">Sobre <span class="text-indigo-600">mi:</span></h1>
-    <div class="div-about">
-        <p class="text-left mt-5 mb-8 text-xl px-10">Soy apasionado en lo que trabajo, con un firme compromiso hacia la excelencia en cada proyecto en el que me involucro. Desde una temprana edad, descubrí mi fascinación por la tecnología y cómo esta puede transformar el mundo que nos rodea.🌎<br><br>Mi enfoque meticuloso y mi dedicación incansable me han permitido <span>enfrentar desafíos complejos</span> con confianza y creatividad. Busco constantemente aprender y crecer, explorando nuevas tecnologías y metodologías para mejorar mi capacidad para crear soluciones innovadoras y eficientes. Estoy emocionado por la oportunidad de colaborar en proyectos desafiantes que me permitan seguir expandiendo mis habilidades y contribuyendo <span>al éxito de negocios tanto grandes como pequeños</span></p>
-
-        <div class="flex flex-row ">
-            <h2 class="font-bold text-center text-white text-3xl px-10">¿Que tecnologias uso? 👨🏻‍💻 </h2>
-        </div>
-
+    <div class="div-about ">
+        <div class="div-images flex justify-center mb-10 mt-10">
+            <div class="Wrapper">
+                <img class="image-profile" src="../../public/images/alvarodev.jpg" alt="">
+                <p class="text-box text-left mt-5 mb-8 text-xl px-10">Soy apasionado en lo que trabajo, con un firme compromiso hacia la excelencia en cada proyecto en el que me involucro. Desde una temprana edad, descubrí mi fascinación por la tecnología y cómo esta puede transformar el mundo que nos rodea.🌎<br><br>Mi enfoque meticuloso y mi dedicación incansable me han permitido <span>enfrentar desafíos complejos</span> con confianza y creatividad. Busco constantemente aprender y crecer, explorando nuevas tecnologías y metodologías para mejorar mi capacidad para crear soluciones innovadoras y eficientes. Estoy emocionado por la oportunidad de colaborar en proyectos desafiantes que me permitan seguir expandiendo mis habilidades y contribuyendo <span>al éxito de negocios tanto grandes como pequeños</span></p>
+                <h2 class="font-bold text-left text-white text-3xl px-10">¿Que tecnologias uso? 👨🏻‍💻 </h2>
+                <p class="text-left mt-5 mb-1 text-xl px-10">Puedo adaptar que tecnologías según las necesidades del cliente, garantizando soluciones a medida y eficaces. Aunque manejo diversas herramientas, me centro en aquellas que considero esenciales para obtener resultados excepcionales en cada proyecto.</p>
+            </div>
     </div>
 </section>
 
@@ -24,5 +25,31 @@ import Layout from "../layouts/Layout.astro";
     span {
         color: rgb(79, 70, 229);
     }
+
+.Div-images {
+    align-items: center;
+}
+
+.wrapper {
+    min-height: 100vh;
+    margin: 150px auto;
+    width: 70%;
+}
+
+.text-box {
+
+}
+
+.image-profile {
+    float: left;
+    border: 3px solid rgb(79, 70, 229);
+    max-width: 320px;
+    border-radius: 50px;
+    margin-right: 2rem;
+    margin-top: 22px;
+    margin-bottom: 1rem;
+}
+
+
 
 </style>
