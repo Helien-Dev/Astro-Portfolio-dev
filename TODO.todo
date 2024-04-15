@@ -1,6 +1,12 @@
-# LISTA TODO PARA HOY
+# TODO
 
-1. Solucionar el layout shift css [x]
-2. Añadir el backcground [x]
-3. Corregir posicion de las imagenes [x]
-4. Añadir botones al bento grid [x]
+1. Quitarle los nombres a los iconos de tecnologías [x]
+2. Agregar iconos de redes a contactarme []
+3. Cambiar descripción de servicios []
+4. Agregar DaisyUI []
+5. Arreglar problemas que de layout al agregar DaisyUI []
+6. Agregar "Copiar al portapapeles" al dar click en el icono de correo []
+7. Borde blanco en el header para móviles []
+8. Eliminar redes del footer []
+9. Corrección de ortografía en todos los archivos []
+10. Quitar enlace de iconos de tecnologías [x]
