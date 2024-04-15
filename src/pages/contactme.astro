@@ -61,7 +61,7 @@ import Button from "../components/Button.astro"
                     class="Contact-Form w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-2xl shadow-2xl dark:bg-[#202020] lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                     <h1 class="text-lg font-medium text-white"></h1>
 
-                    <form class="mt-6">
+                    <form  method="post" action="https://formspree.io/f/xoqgpzjp" class="mt-6">
                         <div class="flex-1">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Nombre completo:</label>
                             <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600  dark:text-gray-300 focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
@@ -77,9 +77,7 @@ import Button from "../components/Button.astro"
                             <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600  dark:text-gray-300 focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 
-                        <Button dedicatedPage="button">
-                            Enviar
-                        </Button>
+                        <input class="boton-Enviar" type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -97,6 +95,19 @@ import Button from "../components/Button.astro"
     }
 
     .Contact-Form {
+        border: 1px solid rgb(79, 70, 229);
+    }
+
+    .boton-Enviar {
+		color: white;
+        border: 1px solid white;
+		padding: 10px;
+		border-radius: 5px;
+    }
+
+    .boton-Enviar:hover {
+        transition-duration: 0.5s;
+		background-color: rgb(79, 70, 229);
         border: 1px solid rgb(79, 70, 229);
     }
 
