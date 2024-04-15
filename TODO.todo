@@ -1,10 +1,10 @@
 # TODO
 
 1. Quitarle los nombres a los iconos de tecnologías [x]
-2. Agregar iconos de redes a contactarme []
+2. Agregar iconos de redes a contactarme [x]
 3. Cambiar descripción de servicios []
-4. Agregar DaisyUI []
-5. Arreglar problemas que de layout al agregar DaisyUI []
+4. Agregar DaisyUI [x]
+5. Arreglar problemas que de layout al agregar DaisyUI [x]
 6. Agregar "Copiar al portapapeles" al dar click en el icono de correo []
 7. Borde blanco en el header para móviles [x]
 8. Eliminar redes del footer [x]
