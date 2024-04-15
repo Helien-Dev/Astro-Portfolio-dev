@@ -39,7 +39,6 @@
         display: none;
         position: fixed;
         z-index: 1000;
-        transform: translate(-50%, -50%);
         padding: 10px;
         text-align: center;
     }
@@ -49,10 +48,28 @@
         display: none;
         position: fixed;
         z-index: 1000;
-        transform: translate(-50%, -50%);
         padding: 10px;
         text-align: center;
         place-content: center;
+        max-width: 600px;
+        margin: auto;
+        }
+    }
+
+    @media screen and(max-width: 750px) {
+        #toast {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        place-content: center;
+        max-width: 100px;
+        margin: auto;
         }
     }
 
