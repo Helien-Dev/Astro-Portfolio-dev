@@ -6,18 +6,22 @@
 
     <a class="px-6 text-center " href="https://www.linkedin.com/in/alvaro-avila-130216248/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="44" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></svg>LinkedIn</a>
 
-    <a class="px-6" href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <a id="clipboard" class="px-6 " href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" />
         <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" />
       </svg>Email</a>
 </div>
-<!-- 
-<div class="toast">
+
+
+<div id="toast" class="toast">
     <div class="alert alert-info bg-indigo-600 text-white font-bold">
       <span>Email copiado al portapapeles.</span>
     </div>
-</div> -->
+</div> 
+
+<script src="../assets/toast-show.js"></script>
+
 
 <style>
     .div-container {
@@ -29,6 +33,15 @@
     .div-container a:hover {
         color: rgb(103, 232, 249);
         transition-duration: 0.5s;
+    }
+
+    #toast {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        text-align: center;
     }
 
 </style>
