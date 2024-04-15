@@ -1,7 +1,7 @@
 ---
 ---
-<header>
-    <nav class="navbar ">
+<header class="header-bar">
+    <nav class="navbar-header ">
         <ul>
             <li><a href="#about-me">Sobre mi</a></li>
             <li><a href="#Experiencia&Projectos">Experiencia & Proyectos</a></li>
@@ -13,14 +13,14 @@
 
 
 <style is:global>
-header {
+.header-bar {
     background-color: #202020;
     padding: 18px;
     border-radius: 10px;
     width: 100%;
 }
 
-.navbar {
+.navbar-header {
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -28,22 +28,22 @@ header {
     list-style-type: none;
 }
 
-.navbar ul {
+.navbar-header ul {
     display: inline-block;
 }
 
-.navbar li {
+.navbar-header li {
     display: inline;
 }
 
-.navbar a {
+.navbar-header a {
     color: #fcfcfc;
     margin: 12px;
     padding-left: 8px;
     padding-right: 8px;
 }
 
-.navbar a:hover {
+.navbar-header a:hover {
     background-color: rgb(79, 70, 229);
     color: white;
     padding: 10px;
@@ -55,29 +55,32 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
-    header {
+    .header-bar {
         padding: 12px;
         position: fixed;
         z-index: 100;
+        border: 1px solid white;
     }
-    .navbar a {
+    .navbar-header a {
         margin-top: 10px;
     }
-    .navbar a:hover {
+    .navbar-header a:hover {
         margin-top: 10px;
     }
 }
 
 @media screen and { max-width: 750px;
-    header {
+    .header-bar {
         padding: 10px;
         position: fixed;
         z-index: 100;
+        border: 1px solid white;
+
     }
-    .navbar a {
+    .navbar-header a {
         margin-top: 10px;
     }
-    .navbar a:hover {
+    .navbar-header a:hover {
         margin-top: 10px;
     }
 }
