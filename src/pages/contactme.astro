@@ -1,10 +1,8 @@
----
-import Button from "../components/Button.astro"
----
+
 
 <section class="Contact-section bg-[#202020]">
     <a id="Contactame" href=""></a>
-    <div class="container px-6 py-12 mx-auto">
+    <div class="media-sreen-contact container px-6 py-12 mx-auto">
         <div class="lg:flex lg:items-center lg:-mx-6">
             <div class="lg:w-1/2 lg:mx-6">
                 <h1 class="font-bold text-left text-white text-5xl px-1">
@@ -58,7 +56,7 @@ import Button from "../components/Button.astro"
 
             <div class="mt-8 lg:w-1/2 lg:mx-6">
                 <div
-                    class="Contact-Form w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-2xl shadow-2xl dark:bg-[#202020] lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+                    class="Contact-Form w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-2xl shadow-2xl dark:bg-[#202020] lg:max-w-xl shadow-gray-300/50 dark:shadow-indigo-800">
                     <h1 class="text-lg font-medium text-white"></h1>
 
                     <form  method="post" action="https://formspree.io/f/xoqgpzjp" class="mt-6">
@@ -110,5 +108,11 @@ import Button from "../components/Button.astro"
 		background-color: rgb(79, 70, 229);
         border: 1px solid rgb(79, 70, 229);
     }
+
+    @media screen and (max-width: 1546px) {
+    .Contact-section {
+        max-width: 1200px;
+    }
+}
 
 </style>
