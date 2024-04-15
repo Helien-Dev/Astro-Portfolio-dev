@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Clipboard Test",
+    "version": "0.1",
+    "permissions": [
+      "clipboardRead"
+    ],
+    "action": {},
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
